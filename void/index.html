@@ -387,8 +387,8 @@ th.details { width: 5.2em; }
 <p>The <code>dcterms:license</code> property should be used to to point to the license under which a dataset has been published. The URIs of some licenses designed specifically for data are:</p>
 
 <ul>
-    <li><a href="http://www.opendatacommons.org/licenses/pddl/">Public Domain Dedication and License (PDDL)</a> — “Public Domain for data/databases”<br />
-        <code>http://www.opendatacommons.org/licenses/pddl/</code></li>
+    <li><a href="http://opendatacommons.org/licenses/pddl/">Public Domain Dedication and License (PDDL)</a> — “Public Domain for data/databases”<br />
+        <code>http://opendatacommons.org/licenses/pddl/</code></li>
     <li><a href="http://opendatacommons.org/licenses/by/">Open Data Commons Attribution (ODC-By)</a> — “Attribution for data/databases”<br />
         <code>http://opendatacommons.org/licenses/by/</code></li>
     <li><a href="http://opendatacommons.org/licenses/odbl/">Open Database License (ODC-ODbL)</a> — “Attribution Share-Alike for data/databases”<br />
@@ -411,20 +411,20 @@ th.details { width: 5.2em; }
 <p>A common community norm is ODC Attribution Sharealike. In brief, it asks that changes and updates to the dataset are made public too, that credit is given, that the source of the data is linked, that open formats are used, and that no DRM is applied:</p>
 
 <ul>
-    <li><a href="http://www.opendatacommons.org/norms/odc-by-sa/">ODC Attribution-Sharealike Community Norms</a><br />
-        <code>http://www.opendatacommons.org/norms/odc-by-sa/</code></li>
+    <li><a href="http://opendatacommons.org/norms/odc-by-sa/">ODC Attribution-Sharealike Community Norms</a><br />
+        <code>http://opendatacommons.org/norms/odc-by-sa/</code></li>
 </ul>
 
 <p>The following example states that the Example dataset is published under the terms of the Open Data Commons Public Domain  Dedication and License, and that users are encouraged (but not legally bound) to follow the community norms mentioned above.</p>
  
 <pre class="turtle">:Example a void:Dataset ;
-    dcterms:license &lt;http://www.opendatacommons.org/odc-public-domain-dedication-and-licence/&gt;;
-    wv:norms &lt;http://www.opendatacommons.org/norms/odc-by-sa/&gt;;
+    dcterms:license &lt;http://opendatacommons.org/odc-public-domain-dedication-and-licence/&gt;;
+    wv:norms &lt;http://opendatacommons.org/norms/odc-by-sa/&gt;;
     wv:waiver """To the extent possible under law, The Example Organisation has waived all
           copyright and related or neighboring rights to The Example Dataset.""";
     .</pre>
 
-<p class="note"><em>Note:</em> Licensing of datasets is a complex issue. Datasets are collections of facts rather than creative works, and different laws apply. Most licenses such as Creative Commons or the GPL are based on copyright and are designed to protect creative works, but not databases, and applying them to datasets might not have the desired legal result. Meanwhile, efforts such as <a href="http://www.opendatacommons.org/" title="Open Data Commons">Open Data Commons</a>, <a href="http://sciencecommons.org/" title="Science Commons">Science Commons</a> and <a href="http://sciencecommons.org/projects/healthcommons/" title="Health Commons">Health Commons</a> are developing dedicated licenses for data, and the <a href="http://www.opendoar.org/tools/en/policies.php" title="OpenDOAR">OpenDOAR</a> project provides tools allowing open-access digital repositories to create customised policies.</p> 
+<p class="note"><em>Note:</em> Licensing of datasets is a complex issue. Datasets are collections of facts rather than creative works, and different laws apply. Most licenses such as Creative Commons or the GPL are based on copyright and are designed to protect creative works, but not databases, and applying them to datasets might not have the desired legal result. Meanwhile, efforts such as <a href="http://opendatacommons.org/" title="Open Data Commons">Open Data Commons</a>, <a href="http://sciencecommons.org/" title="Science Commons">Science Commons</a> and <a href="http://sciencecommons.org/projects/healthcommons/" title="Health Commons">Health Commons</a> are developing dedicated licenses for data, and the <a href="http://www.opendoar.org/tools/en/policies.php" title="OpenDOAR">OpenDOAR</a> project provides tools allowing open-access digital repositories to create customised policies.</p> 
  
 
 <h3 id="subject">2.5 Categorizing datasets by subject</h3>
@@ -865,7 +865,7 @@ th.details { width: 5.2em; }
 
 <p>The structure of a typical linkset description is illustrated below: It expresses that the DBpedia dataset contains a subset of <code>owl:sameAs</code> links that connect resources in DBpedia to resources in Geonames.</p>
 
-<p class="image"><img src="img/linkset.png" alt="RDF graph of a typical linkset description" /></p>
+<p class="image"><img src="linkset.png" alt="RDF graph of a typical linkset description" /></p>
 
 
 <h3 id="target">5.1 Naming a linkset's two target datasets</h3>
